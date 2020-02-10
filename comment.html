@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <script>
+    //ambil element, simpan kedalam variabel
+    var pesan = document.getElemenById('pesan');
+    var username = document.getElementById('username');
+
+    // Buat regex untuk inputan minimal 6 karakter (digit dan angka)
+    var pattern = /^[A-Za-z0-9]{6,}$/;
+9 /* Buat fungsi untuk mengecek username.
+   Fungsi ini dibuat menggunakan regular expression */
+  
+ submit.onclick = function () {
+   if (pattern.test(username.value)) {
+     pesan.innerHTML = "Username sesuai";
+     pesan.className= "betul"; // Artinya username sudah sesuai
+     }
+   }
+
+
+  </script>
+</body>
+</html>
