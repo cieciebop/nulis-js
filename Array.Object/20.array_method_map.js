@@ -1,6 +1,7 @@
 /*
 Method map() mirip seperti forEach(), 
-dalam artian method ini juga menjalankan sebuah function callback sebagai argument. Bedanya, method map() akan mengembalikan sebuah array baru sebagai hasil callback.
+dalam artian method ini juga menjalankan sebuah function callback sebagai argument. 
+Bedanya, method map() akan mengembalikan sebuah array baru sebagai hasil callback.
 Berikut contoh penggunaannya:
 
 */
