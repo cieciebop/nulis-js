@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      Method getAttribute() digunakan untuk mengambil nilai dari atribut.
+      Atribut yang ingin diambil nilainya diinput sebagai argumen dari method
+      ini. Berikut contoh penggunaannya:
+    </p>
+    <h1 id="judul" title="Sedang Belajar">Belajar javascript</h1>
+    <script>
+      var sebuahNode = document.getElementById("judul");
+
+      console.log(sebuahNode.getAttribute("id"));
+      console.log(sebuahNode.getAttribute("title"));
+      console.log(sebuahNode.getAttribute("class"));
+    </script>
+  </body>
+</html>

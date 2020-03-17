@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar JS</title>
+    <style>
+      div {
+        border: 3px solid black;
+        width: 500px;
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+      p {
+        border: 1px solid black;
+        width: 300px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        font-size: 20px;
+        margin: 30px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1"><p>Mouse over & out</p></div>
+    <div id="div2"><p>Mouse enter & leave></p></div>
+    <script>
+      function keLavender(e) {
+        e.target.style.backgroundColor = "Lavender";
+      }
+      function keAquamarine(e) {
+        e.target.style.backgroundColor = "Aquamarine";
+      }
+      var divNode1 = document.getElementById("div1");
+      divNode1.addEventListener("mouseover", keLavender);
+      divNode1.addEventListener("mouseout", keAquamarine);
+      var divNode2 = document.getElementById("div2");
+      divNode2.addEventListener("mouseenter", keLavender);
+      divNode2.addEventListener("mouseleave", keAquamarine);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Javascript</title>
+    <style>
+      h1 {
+        color: green;
+        background-color: #cac8c3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="judul">Belajar Javascript</h1>
+    <script>
+      var h1Node = document.getElementById("judul");
+      var hasilStyle = getComputedStyle(h1Node, null);
+
+      console.log(hasilStyle);
+      console.log(hasilStyle.length);
+      //   console.log(hasilStyle[0]);
+      //   conosle.log(hasilStyle[1]);
+      console.log(hasilStyle.color);
+      console.log(hasilStyle.backgroundColor);
+      console.log(hasilStyle.height);
+    </script>
+  </body>
+</html>

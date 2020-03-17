@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM_Event</title>
+  </head>
+  <body>
+    <h1 id="judul">DOM-EVENT bab event object</h1>
+    <script>
+      h1Node = document.getElementById("judul");
+      h1Node.addEventListener("click", function(event) {
+        console.log(event.target);
+        console.log(event.type);
+        console.log(event.bubbles);
+        console.log(event.cancelable);
+        console.log(event.defaultPrevented);
+        console.log(event.detail);
+      });
+    </script>
+  </body>
+</html>

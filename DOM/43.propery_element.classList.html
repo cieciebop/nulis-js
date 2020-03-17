@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js</title>
+    <style>
+      .penting {
+        border: 2px solid black;
+        width: 300px;
+        text-align: center;
+      }
+      .merah {
+        color: red;
+        padding: 20px;
+      }
+      .warning {
+        background-color: pink;
+      }
+      .hijau {
+        color: green;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="judul" class="merah warning">Belajar JS</h1>
+    <script>
+      var h1Node = document.getElementById("judul");
+      console.log(h1Node.classList);
+
+      h1Node.classList.add("penting");
+      h1Node.classList.remove("merah");
+      h1Node.classList.add("hijau");
+
+      console.log(h1Node.classList);
+
+      console.log(h1Node.classList.length);
+      console.log(h1Node.classList.contains("penting"));
+      console.log(h1Node.classList.contains("merah"));
+    </script>
+  </body>
+</html>

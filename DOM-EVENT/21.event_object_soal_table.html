@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Javascript</title>
+    <style>
+      table,
+      td {
+        border: 1px solid black;
+      }
+      td {
+        padding: 10px 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>red</td>
+        <td>cyan</td>
+        <td>green</td>
+      </tr>
+      <tr>
+        <td>yellow</td>
+        <td>brown</td>
+        <td>pink</td>
+      </tr>
+      <tr>
+        <td>aqua</td>
+        <td>magenta</td>
+        <td>orange</td>
+      </tr>
+    </table>
+
+    <script>
+      var tableNode = document.querySelector("table");
+
+      function ubahWarna(e) {
+        e.target.style.backgroundColor = e.target.innerHTML;
+      }
+      tableNode.addEventListener("click", ubahWarna);
+    </script>
+  </body>
+</html>

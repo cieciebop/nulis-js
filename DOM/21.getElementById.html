@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript - DOM</title>
+  </head>
+  <body>
+    <h1 id="judul">Belajar Javascript</h1>
+    <p>sedang belajar <em id="emTag">javascript</em> <b>dari Buku</b></p>
+
+    <script>
+      var emNode = document.getElementById("emTag");
+      console.log(emNode.nodeName);
+      console.log(emNode.nodeType);
+      console.log(emNode.childNodes);
+      console.log(emNode.textContent);
+
+      emNode.textContent = "Document Object 1";
+      emNode.innerHTML = "Memanfaatkan getElementById";
+
+      // var h1Node = (document.getElementById("judul").innerHTML = "Rwar");
+      var h1Node = document.getElementById("judul");
+      // h1Node.textContent = "Merubah dengan textContent";
+      h1Node.innerHTML = "Merubah dengan InnerHTML";
+    </script>
+  </body>
+</html>

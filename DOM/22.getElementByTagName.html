@@ -1,0 +1,29 @@
+<!-- Method getElementsByTagName() digunakan untuk mencari element node berdasarkan nama tag, seperti "p", "h1", "em" atau "b". -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Javascript Bab DOM</title>
+  </head>
+  <body>
+    <h1>Belajar HTML</h1>
+    <h1>Belajar Javascript</h1>
+    <p>Sedang belajar <em>Javascipt</em> dengan buku Javascript uncover</p>
+
+    <script>
+      var h1TagNode = document.getElementsByTagName("h1");
+      console.log(h1TagNode);
+      console.log(h1TagNode[0].nodeName);
+      console.log(h1TagNode[0].nodeType);
+      console.log(h1TagNode[0].childNodes);
+      console.log(h1TagNode[0].textContent);
+
+      console.log(h1TagNode[1].nodeName);
+      console.log(h1TagNode[1].nodeType);
+      console.log(h1TagNode[1].childNodes);
+      console.log(h1TagNode[1].textContent);
+    </script>
+  </body>
+</html>

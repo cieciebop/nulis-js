@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- dengan cara addEventListener meruapkan cara yang disarankan w3c -->
+    <h1 id="judul">Belaja JS DOM-EVent</h1>
+    <p></p>
+    <h3></h3>
+    <script>
+      function tampilkanP() {
+        document.querySelector("p").innerHTML = "Judul di klik dalam tag <p>";
+      }
+      function tampilkanH3() {
+        document.querySelector("h3").innerHTML =
+          "menambahkan judul ke dalam tag <h3>";
+      }
+      var h1Node = document.getElementById("judul");
+      h1Node.addEventListener("click", tampilkanP);
+      h1Node.addEventListener("click", tampilkanH3);
+      h1Node.removeEventListener("click", tampilkanH3);
+    </script>
+  </body>
+</html>

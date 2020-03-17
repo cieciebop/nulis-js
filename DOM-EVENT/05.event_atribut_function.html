@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM-Even dalam JS</title>
+  </head>
+  <style>
+    h1 {
+      border: 2px solid black;
+      width: 280px;
+      padding: 10px;
+      text-align: center;
+      color: red;
+      background-color: pink;
+    }
+  </style>
+  <body>
+    <h1 onclick="tampilkan()">
+      Klik sekali saja
+    </h1>
+
+    <!-- Di bawah tag <h1> saya membuat sebuah tag <p> kosong (tanpa berisi teks). Teks akan diinput dari kode JavaScript yang di letakkan pada atribut onclick. Apa isinya? Yakni perintah:
+document.querySelector('p').innerHTML='Judul di klik';
+Artinya, ketika tag <h1> di klik, tag <p> akan berisi teks ‘Judul di klik’,  -->
+    <p></p>
+
+    <script>
+      function tampilkan() {
+        document.querySelector("p").innerHTML =
+          "Judul di klik dengan method function";
+      }
+    </script>
+  </body>
+</html>

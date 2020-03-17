@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar JS DOM-Event</title>
+    <style>
+      h1,
+      h2,
+      div {
+        border: 2px solid black;
+        width: 280px;
+        padding: 10px;
+        text-align: center;
+        color: red;
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="judul">Belajar Javascript</h1>
+    <h2 id="judul2">Belajar HTML</h2>
+    <div id="tagDiv">Belajar CSS</div>
+    <script>
+      var h1Node = document.getElementById("judul");
+      var h2Node = document.getElementById("judul2");
+      var divNode = document.getElementById("tagDiv");
+
+      function tampilkan(e) {
+        var idTarget = e.target.getAttribute("id");
+        if (idTarget === "judul") {
+          e.target.style.backgroundColor = "yellow";
+        } else if (idTarget === "judul2") {
+          e.target.style.backgroundColor = "aqua";
+        } else if (idTarget === "tagDiv") {
+          e.target.style.backgroundColor = "silver";
+        }
+      }
+      h1Node.addEventListener("click", tampilkan);
+      h2Node.addEventListener("click", tampilkan);
+      divNode.addEventListener("click", tampilkan);
+    </script>
+  </body>
+</html>

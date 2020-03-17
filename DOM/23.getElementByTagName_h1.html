@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Javascript DOM</title>
+  </head>
+  <body>
+    <h1>Belajar Javascript Bab manipulasi DOM</h1>
+    <p>
+      Saya sedang belajar <em>Javascript</em> dengan buku Javascript Uncover
+    </p>
+    <ol>
+      <li>Belajar HTML</li>
+      <li>Belajar CSS</li>
+      <li>Belajar Javascript</li>
+    </ol>
+    <ol>
+      <li>Belajar PHP</li>
+      <li>Belajar Mysql</li>
+    </ol>
+    <script>
+      var liTagNode = document.getElementsByTagName("li");
+      console.log(liTagNode);
+
+      console.log(liTagNode.length);
+
+      var liNode;
+      for (liNode of liTagNode) {
+        console.log(liNode.textContent);
+      }
+    </script>
+  </body>
+</html>

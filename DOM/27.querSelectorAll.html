@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar manipulasi javascript dengan DOM</title>
+  </head>
+  <body>
+    <h1>Belajar Javascript</h1>
+    <p>sedang belajar <em>Javascript</em> dengan buku <b>DunaiIlkom</b></p>
+    <ol>
+      <li>Belajar HTML</li>
+      <li>Belajar Javascript</li>
+      <li>Belajar CSS</li>
+      <li>Belajar MySql</li>
+      <li>Belajar PHP</li>
+    </ol>
+    <script>
+      var kumpulanNode = document.querySelectorAll("li");
+      // untuk mencari nilai yang genap saja gunakan
+      var kumpulanNodegenap = document.querySelectorAll("li:nth-child(even)");
+      console.log(kumpulanNode);
+      console.log(kumpulanNode.length);
+
+      var isiNode;
+      for (isiNode of kumpulanNode) {
+        isiNode.textContent = "Belajar Dokomen Object";
+      }
+    </script>
+  </body>
+</html>

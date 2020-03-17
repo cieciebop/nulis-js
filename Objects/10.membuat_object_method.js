@@ -1,5 +1,6 @@
 /*
-membuat object method sama halnya dengan membuat object property tap yang musti diingat di akhir bracket akhirnya dengan (;)
+membuat object method sama halnya dengan membuat object property 
+tap yang musti diingat di akhir bracket akhirnya dengan (;)
 
 */
 

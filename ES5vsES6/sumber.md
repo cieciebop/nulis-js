@@ -1,0 +1,2 @@
+- https://randy.js.org/penulisan-kode-es6-dan-pengenalan-fitur/
+- 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajas JS</title>
+  </head>
+  <body>
+    <div>
+      <h1>Belajar <em>Javascript</em></h1>
+    </div>
+  </body>
+  <script>
+    var emNode = document.querySelector("em");
+    var h1Node = document.querySelector("h1");
+    var divNode = document.querySelector("div");
+
+    function tampilkanH1() {
+      console.log("Tag h1 di-klik");
+    }
+    function tampilkanEm() {
+      console.log("Tag em di-klik");
+    }
+    function tampilkanDiv() {
+      console.log("Tag div di-klik");
+    }
+    emNode.addEventListener("click", tampilkanEm);
+    h1Node.addEventListener("click", tampilkanH1);
+    divNode.addEventListener("click", tampilkanDiv);
+  </script>
+</html>

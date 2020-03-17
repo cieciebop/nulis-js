@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Javascript</title>
+  </head>
+  <body>
+    <h1>Bab Method element hasAttribute</h1>
+    <p>
+      Method hasAttribute() digunakan untuk memeriksa apakah sebuah atribut
+      sudah di set di dalam element HTML atau belum. Atribut yang akan dicek
+      diinput sebagai argumen dari method ini. Hasil akhir dari method
+      hasAttribute() adalah boolean true atau false. True jika atribut tersebut
+      ditemukan, dan false jika atribut itu tidak ditulis.
+    </p>
+    <h1 id="judul" title="Sedang Belajar">Belajar Javascript</h1>
+    <script>
+      var sebuahNode = document.getElementById("judul");
+
+      console.log(sebuahNode.hasAttribute("id"));
+      console.log(sebuahNode.hasAttribute("title"));
+      console.log(sebuahNode.hasAttribute("class"));
+    </script>
+  </body>
+</html>

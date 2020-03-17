@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar JS DOM-Event</title>
+  </head>
+  <body>
+    <h1 id="judul">Klik judul</h1>
+    <p></p>
+    <script>
+      var h1Node = document.getElementById("judul");
+      var pNode = document.querySelector("p");
+
+      function tampilkan(event) {
+        if (event.ctrlKey === true) {
+          pNode.innerHTML = "Tombol CTRL terdeteksi";
+        } else if (event.altKey === true) {
+          pNode.innerHTML = "Tombol ALT terdeteksi";
+        } else {
+          pNode.innerHTML = "Setelah di klik judul";
+        }
+      }
+      h1Node.addEventListener("click", tampilkan);
+    </script>
+  </body>
+</html>

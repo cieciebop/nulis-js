@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      Method setAttribute() digunakan untuk mengubah atau menambah sebuah
+      atribut baru ke dalam element HTML. Atribut ini membutuhkan 2 buah
+      argumen, yakni nama atribut dan nilai dari atribut. Berikut contoh
+      penggunaannya:
+    </p>
+    <h1 id="judul" title="Sedang Belajar">Belajar javascript</h1>
+    <script>
+      var sebuahNode = document.getElementById("judul");
+
+      console.log(sebuahNode.getAttribute("id"));
+      console.log(sebuahNode.getAttribute("title"));
+
+      sebuahNode.setAttribute("id", "JudulArtikel");
+      sebuahNode.setAttribute("title", "Jangan diganggu");
+      sebuahNode.setAttribute("class", "header");
+    </script>
+  </body>
+</html>
